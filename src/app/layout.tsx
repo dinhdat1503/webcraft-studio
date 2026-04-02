@@ -1,22 +1,23 @@
 import type { Metadata } from 'next';
-import { Plus_Jakarta_Sans, Space_Grotesk } from 'next/font/google';
+import { DM_Sans, DM_Serif_Display } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingButtons from '@/components/ui/FloatingButtons';
 
-const jakarta = Plus_Jakarta_Sans({
-  subsets: ['latin', 'vietnamese'],
+const dmSans = DM_Sans({
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-body',
   display: 'swap',
-  weight: ['300', '400', '500', '600', '700', '800'],
+  weight: ['300', '400', '500', '600', '700'],
 });
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin', 'vietnamese'],
+const dmSerif = DM_Serif_Display({
+  subsets: ['latin', 'latin-ext'],
   variable: '--font-heading',
   display: 'swap',
-  weight: ['400', '500', '600', '700'],
+  weight: '400',
+  style: ['normal', 'italic'],
 });
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={`${jakarta.variable} ${spaceGrotesk.variable}`}>
+    <html lang="vi" className={`${dmSans.variable} ${dmSerif.variable}`}>
       <body className="font-body antialiased">
         <Header />
         <main>{children}</main>
