@@ -40,11 +40,11 @@ export const ProcessSection: FC = () => (
             className="relative p-8 group hover:bg-white hover:shadow-lg hover:rounded-xl hover:z-10
               transition-all duration-300"
           >
-            <span className="block font-outfit text-6xl font-black text-gray-100
+            <span className="block font-heading text-6xl font-black text-gray-100
               group-hover:text-red-600 transition-colors duration-300 leading-none mb-4">
               {step.number}
             </span>
-            <h3 className="font-outfit text-lg font-black text-gray-900 mb-3">{step.title}</h3>
+            <h3 className="font-heading text-lg font-black text-gray-900 mb-3">{step.title}</h3>
             <p className="text-sm text-gray-600 leading-relaxed">{step.description}</p>
             {idx < processSteps.length - 1 && (
               <span className="hidden lg:block absolute top-1/3 right-[-8px] text-red-600 font-black text-lg z-20">

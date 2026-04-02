@@ -37,7 +37,7 @@ const PortfolioSection: FC = () => {
                     uppercase tracking-widest px-3 py-1 rounded mb-3 w-fit">
                     {item.category}
                   </span>
-                  <h3 className="font-outfit text-xl font-black text-white mb-2">
+                  <h3 className="font-heading text-xl font-black text-white mb-2">
                     {item.shortTitle}
                   </h3>
                   <p className="text-white/75 text-sm leading-relaxed mb-4">{item.description}</p>
@@ -52,7 +52,7 @@ const PortfolioSection: FC = () => {
                 <span className="text-red-600 text-xs font-bold uppercase tracking-widest block mb-1">
                   {item.category}
                 </span>
-                <h3 className="font-outfit text-sm font-bold text-gray-900 leading-snug">
+                <h3 className="font-heading text-sm font-bold text-gray-900 leading-snug">
                   {item.title}
                 </h3>
               </div>

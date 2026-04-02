@@ -31,7 +31,7 @@ const SectionHeader: FC<SectionHeaderProps> = ({
         {tag}
       </span>
       <h2
-        className={`font-outfit text-4xl md:text-5xl font-black leading-tight mb-6
+        className={`font-heading text-4xl md:text-5xl font-black leading-tight mb-6
           ${light ? 'text-white' : 'text-gray-900'}`}
       >
         {title}

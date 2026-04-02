@@ -35,7 +35,7 @@ const HeroSection: FC = () => {
         </div>
 
         {/* Title */}
-        <h1 className="font-outfit font-black text-6xl md:text-8xl text-white leading-[1.05] tracking-tighter mb-6">
+        <h1 className="font-heading font-black text-6xl md:text-8xl text-white leading-[1.05] tracking-tighter mb-6">
           Công ty thiết kế
           <br />
           <span className="text-red-600 italic">Website.</span>

@@ -25,10 +25,10 @@ const Header: FC = () => {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 group">
             <span className="w-9 h-9 bg-red-600 rounded-lg flex items-center justify-center
-              text-white font-outfit font-black text-lg">
+              text-white font-heading font-black text-lg">
               W
             </span>
-            <span className={`font-outfit font-black text-xl transition-colors
+            <span className={`font-heading font-black text-xl transition-colors
               ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
               WebCraft<span className="text-red-600">Studio</span>
             </span>

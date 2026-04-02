@@ -11,8 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        outfit: ['var(--font-outfit)', 'sans-serif'],
-        inter:  ['var(--font-inter)',  'sans-serif'],
+        body:    ['var(--font-body)', 'system-ui', 'sans-serif'],
+        heading: ['var(--font-heading)', 'system-ui', 'sans-serif'],
       },
       colors: {
         brand: {

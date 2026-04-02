@@ -34,17 +34,17 @@ const PricingSection: FC = () => {
 
               {/* Header */}
               <div className="pb-6 mb-6 border-b border-white/15">
-                <h3 className="font-outfit text-xl font-black text-white mb-4">{plan.name}</h3>
+                <h3 className="font-heading text-xl font-black text-white mb-4">{plan.name}</h3>
                 <div className="flex items-baseline gap-1">
                   {typeof plan.price === 'number' ? (
                     <>
                       <span className="text-white/70 text-xl">₫</span>
-                      <span className="font-outfit font-black text-4xl text-white leading-none">
+                      <span className="font-heading font-black text-4xl text-white leading-none">
                         {plan.price.toLocaleString('vi-VN')}
                       </span>
                     </>
                   ) : (
-                    <span className="font-outfit font-black text-3xl text-white leading-none">
+                    <span className="font-heading font-black text-3xl text-white leading-none">
                       {plan.price}
                     </span>
                   )}

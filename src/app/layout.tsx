@@ -1,20 +1,22 @@
 import type { Metadata } from 'next';
-import { Inter, Outfit } from 'next/font/google';
+import { Plus_Jakarta_Sans, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingButtons from '@/components/ui/FloatingButtons';
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ['latin', 'vietnamese'],
+  variable: '--font-body',
   display: 'swap',
+  weight: ['300', '400', '500', '600', '700', '800'],
 });
 
-const outfit = Outfit({
-  subsets: ['latin'],
-  variable: '--font-outfit',
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin', 'vietnamese'],
+  variable: '--font-heading',
   display: 'swap',
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
@@ -32,8 +34,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={`${inter.variable} ${outfit.variable}`}>
-      <body>
+    <html lang="vi" className={`${jakarta.variable} ${spaceGrotesk.variable}`}>
+      <body className="font-body antialiased">
         <Header />
         <main>{children}</main>
         <Footer />

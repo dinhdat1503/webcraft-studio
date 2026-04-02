@@ -18,11 +18,11 @@ const StatCounter: FC<StatCounterProps> = ({ target, suffix, label }) => {
       <div className="flex items-baseline gap-0.5">
         <span
           ref={ref}
-          className="font-outfit text-4xl font-black text-white leading-none"
+          className="font-heading text-4xl font-black text-white leading-none"
         >
           {count}
         </span>
-        <span className="font-outfit text-2xl font-black text-red-500">
+        <span className="font-heading text-2xl font-black text-red-500">
           {suffix}
         </span>
       </div>

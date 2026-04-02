@@ -14,7 +14,7 @@ const CtaBanner: FC = () => {
       />
 
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
-        <h2 className="font-outfit font-black text-4xl md:text-5xl text-white leading-tight mb-5">
+        <h2 className="font-heading font-black text-4xl md:text-5xl text-white leading-tight mb-5">
           Bạn đã sẵn sàng khởi động<br />dự án của mình ngay hôm nay chưa?
         </h2>
         <p className="text-white/70 text-lg mb-10 leading-relaxed">

@@ -39,7 +39,7 @@ const Button: FC<ButtonProps> = ({
   ...rest
 }) => {
   const base =
-    'inline-flex items-center justify-center gap-2 rounded font-outfit font-bold border-2 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer';
+    'inline-flex items-center justify-center gap-2 rounded font-heading font-bold border-2 transition-all duration-300 hover:-translate-y-0.5 cursor-pointer';
   const classes = [
     base,
     variantClasses[variant],

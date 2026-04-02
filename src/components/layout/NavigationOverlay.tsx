@@ -47,7 +47,7 @@ const NavigationOverlay: FC<NavigationOverlayProps> = ({ isOpen, onClose }) => {
             key={link.href}
             href={link.href}
             onClick={onClose}
-            className="font-outfit text-4xl md:text-6xl font-black text-white
+            className="font-heading text-4xl md:text-6xl font-black text-white
               relative group transition-all duration-300 hover:pl-4
               after:content-[''] after:absolute after:bottom-0 after:left-0
               after:w-0 after:h-0.5 after:bg-white/50 after:transition-all after:duration-300
@@ -61,7 +61,7 @@ const NavigationOverlay: FC<NavigationOverlayProps> = ({ isOpen, onClose }) => {
         <Link
           href="#contact"
           onClick={onClose}
-          className="mt-4 font-outfit text-lg font-black text-white
+          className="mt-4 font-heading text-lg font-black text-white
             px-6 py-2.5 border-2 border-white/40 rounded
             hover:bg-white/10 hover:border-white transition-all duration-300"
         >

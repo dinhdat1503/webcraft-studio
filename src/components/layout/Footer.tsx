@@ -42,8 +42,8 @@ const Footer: FC = () => {
         {/* Brand */}
         <div className="lg:col-span-1">
           <Link href="/" className="flex items-center gap-2 mb-5">
-            <span className="w-9 h-9 bg-red-600 rounded-lg flex items-center justify-center text-white font-outfit font-black text-lg">W</span>
-            <span className="font-outfit font-black text-xl text-white">WebCraft<span className="text-red-600">Studio</span></span>
+            <span className="w-9 h-9 bg-red-600 rounded-lg flex items-center justify-center text-white font-heading font-black text-lg">W</span>
+            <span className="font-heading font-black text-xl text-white">WebCraft<span className="text-red-600">Studio</span></span>
           </Link>
           <p className="text-sm leading-relaxed text-white/55 max-w-xs">
             Công ty thiết kế website chuyên nghiệp tại Việt Nam. Chúng tôi giúp doanh nghiệp phát triển mạnh mẽ trong kỷ nguyên số.

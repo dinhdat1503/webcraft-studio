@@ -15,7 +15,7 @@ const BlogSection: FC = () => {
               text-red-600 mb-3 before:content-[''] before:inline-block before:w-5 before:h-0.5 before:bg-red-600">
               Kiến Thức & Blog
             </span>
-            <h2 className="font-outfit text-4xl font-black text-gray-900 leading-tight">
+            <h2 className="font-heading text-4xl font-black text-gray-900 leading-tight">
               Insights từ chuyên gia<br />thiết kế web
             </h2>
           </div>
@@ -44,7 +44,7 @@ const BlogSection: FC = () => {
                   <span>•</span>
                   <span>{post.readTime}</span>
                 </div>
-                <h3 className="font-outfit font-bold text-base text-gray-900 leading-snug mb-3">
+                <h3 className="font-heading font-bold text-base text-gray-900 leading-snug mb-3">
                   {post.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">{post.excerpt}</p>

@@ -14,18 +14,18 @@
   }
 
   body {
-    @apply font-inter text-gray-800 bg-white overflow-x-hidden;
+    @apply text-gray-800 bg-white overflow-x-hidden;
+  }
+
+  /* Headings default to heading font */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), system-ui, sans-serif;
   }
 
   /* Custom scrollbar */
   ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-track { @apply bg-gray-100; }
   ::-webkit-scrollbar-thumb { @apply bg-red-600 rounded-full; }
-}
-
-@layer utilities {
-  .font-outfit  { font-family: 'Outfit',  sans-serif; }
-  .font-inter   { font-family: 'Inter',   sans-serif; }
 }
 
 /* Animations */

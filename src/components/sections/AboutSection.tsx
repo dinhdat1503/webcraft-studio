@@ -25,7 +25,7 @@ const AboutSection: FC = () => {
             text-red-600 mb-4 before:content-[''] before:inline-block before:w-5 before:h-0.5 before:bg-red-600">
             Về Chúng Tôi
           </span>
-          <h2 className="font-outfit text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6">
+          <h2 className="font-heading text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6">
             Đội ngũ chuyên gia <span className="text-red-600">10 năm</span> đam mê
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
@@ -42,7 +42,7 @@ const AboutSection: FC = () => {
               <div key={h.title} className="flex gap-4 items-start">
                 <span className="text-2xl flex-shrink-0 mt-0.5">{h.icon}</span>
                 <div>
-                  <h4 className="font-outfit font-bold text-gray-900 mb-1">{h.title}</h4>
+                  <h4 className="font-heading font-bold text-gray-900 mb-1">{h.title}</h4>
                   <p className="text-sm text-gray-600">{h.desc}</p>
                 </div>
               </div>
@@ -61,7 +61,7 @@ const AboutSection: FC = () => {
                 transition-all duration-300
                 ${stat.accent ? 'bg-red-600 text-white' : 'bg-white'}`}
             >
-              <span className={`block font-outfit text-5xl font-black mb-2 leading-none
+              <span className={`block font-heading text-5xl font-black mb-2 leading-none
                 ${stat.accent ? 'text-white' : 'text-gray-900'}`}>
                 {stat.value}
               </span>

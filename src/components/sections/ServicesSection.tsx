@@ -53,7 +53,7 @@ const ServicesSection: FC = () => {
                 <ServiceIcon icon={svc.icon} />
               </div>
 
-              <h3 className="font-outfit text-2xl font-black text-white mb-4">{svc.title}</h3>
+              <h3 className="font-heading text-2xl font-black text-white mb-4">{svc.title}</h3>
               <p className="text-white/65 text-sm leading-relaxed mb-6">{svc.description}</p>
 
               <ul className="space-y-2 mb-8">
