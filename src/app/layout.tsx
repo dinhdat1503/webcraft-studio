@@ -5,19 +5,18 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingButtons from '@/components/ui/FloatingButtons';
 
-const dmSans = DM_Sans({
-  subsets: ['latin', 'latin-ext'],
+const dmsans = DM_Sans({
+  subsets: ['latin'], // DM Sans and DM Serif Display have limited vietnamese subset support natively in next/font, falling back to latin. We might need to ensure characters render correctly.
   variable: '--font-body',
   display: 'swap',
-  weight: ['300', '400', '500', '600', '700'],
+  weight: ['400', '500', '700'],
 });
 
-const dmSerif = DM_Serif_Display({
-  subsets: ['latin', 'latin-ext'],
+const dmSerifDisplay = DM_Serif_Display({
+  subsets: ['latin'],
   variable: '--font-heading',
   display: 'swap',
-  weight: '400',
-  style: ['normal', 'italic'],
+  weight: ['400'], // DM Serif Display comes in 400 and 400 italic
 });
 
 export const metadata: Metadata = {
@@ -35,7 +34,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={`${dmSans.variable} ${dmSerif.variable}`}>
+    <html lang="vi" className={`${dmsans.variable} ${dmSerifDisplay.variable}`}>
       <body className="font-body antialiased">
         <Header />
         <main>{children}</main>
@@ -45,3 +44,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
