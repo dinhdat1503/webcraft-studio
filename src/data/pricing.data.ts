@@ -1,0 +1,57 @@
+import type { PricingPlan } from '@/types';
+
+export const pricingData: PricingPlan[] = [
+  {
+    id: 'starter',
+    name: 'Starter',
+    price: '8.900.000',
+    priceNote: 'Thanh toán một lần',
+    ctaText: 'Bắt đầu ngay',
+    features: [
+      { text: 'Thiết kế 5-7 trang', included: true },
+      { text: 'Responsive Mobile', included: true },
+      { text: 'Tên miền 1 năm', included: true },
+      { text: 'Hosting 1 năm (5GB)', included: true },
+      { text: 'SSL Certificate', included: true },
+      { text: 'SEO cơ bản', included: true },
+      { text: 'E-commerce', included: false },
+      { text: 'Tích hợp thanh toán', included: false },
+    ],
+  },
+  {
+    id: 'professional',
+    name: 'Professional',
+    price: '19.900.000',
+    priceNote: 'Thanh toán một lần',
+    ctaText: 'Bắt đầu ngay',
+    isFeatured: true,
+    badgeText: 'Phổ biến nhất',
+    features: [
+      { text: 'Thiết kế 10-15 trang', included: true },
+      { text: 'Responsive Mobile', included: true },
+      { text: 'Tên miền 1 năm', included: true },
+      { text: 'Hosting VPS (20GB)', included: true },
+      { text: 'SSL Certificate', included: true },
+      { text: 'SEO chuyên sâu', included: true },
+      { text: 'Tích hợp thanh toán', included: true },
+      { text: 'Admin Panel', included: true },
+    ],
+  },
+  {
+    id: 'enterprise',
+    name: 'Enterprise',
+    price: 'Liên hệ',
+    priceNote: 'Báo giá tùy nhu cầu',
+    ctaText: 'Tư vấn miễn phí',
+    features: [
+      { text: 'Trang không giới hạn', included: true },
+      { text: 'Thiết kế UI/UX độc quyền', included: true },
+      { text: 'Tích hợp hệ thống ERP/CRM', included: true },
+      { text: 'Server dedicated', included: true },
+      { text: 'Bảo mật enterprise', included: true },
+      { text: 'Đa ngôn ngữ', included: true },
+      { text: 'App Mobile iOS/Android', included: true },
+      { text: 'Hỗ trợ ưu tiên 24/7', included: true },
+    ],
+  },
+];
