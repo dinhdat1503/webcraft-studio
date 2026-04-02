@@ -9,7 +9,7 @@ const PricingSection: FC = () => {
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeader
           tag="Bảng Giá"
-          title={<>Gói dịch vụ phù hợp<br />cho <span className="text-red-600">mọi nhu cầu</span></>}
+          title={<>Gói dịch vụ phù hợp<br />cho <span className="text-brand-catchie-blue">mọi nhu cầu</span></>}
           description="Chúng tôi cam kết mang lại giá trị thực sự với mức đầu tư hợp lý nhất thị trường"
           light
         />
@@ -20,8 +20,8 @@ const PricingSection: FC = () => {
               key={plan.id}
               className={`relative rounded-2xl p-8 border transition-all duration-300 hover:-translate-y-1.5
                 ${plan.isFeatured
-                  ? 'bg-red-600 border-red-600 hover:bg-red-700'
-                  : 'bg-white/[0.04] border-white/10 hover:bg-white/[0.07] hover:border-white/20'
+                  ? 'bg-brand-catchie-blue border-brand-catchie-blue hover:bg-blue-400'
+                  : 'bg-brand-catchie-navy/40/[0.04] border-white/10 hover:bg-brand-catchie-navy/40/[0.07] hover:border-white/20'
                 }`}
             >
               {plan.badgeText && (
@@ -68,7 +68,7 @@ const PricingSection: FC = () => {
                 href="#contact"
                 variant={plan.isFeatured ? 'outline-white' : 'outline-dark'}
                 fullWidth
-                className={plan.isFeatured ? '' : '!border-white/30 !text-white hover:!bg-white hover:!text-black'}
+                className={plan.isFeatured ? '' : '!border-white/30 !text-white hover:!bg-brand-catchie-navy/40 hover:!text-black'}
               >
                 {plan.ctaText}
               </Button>

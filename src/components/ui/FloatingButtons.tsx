@@ -16,8 +16,8 @@ const FloatingButtons: FC = () => {
       <button
         onClick={scrollToTop}
         aria-label="Cuộn lên đầu trang"
-        className={`w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center
-          shadow-lg hover:bg-red-700 hover:-translate-y-1 transition-all duration-300
+        className={`w-12 h-12 rounded-full bg-brand-catchie-blue text-white flex items-center justify-center
+          shadow-[0_0_15px_rgba(93,173,226,0.5)] hover:shadow-[0_0_25px_rgba(93,173,226,0.8)] hover:bg-blue-400 hover:-translate-y-1 transition-all duration-300
           ${isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">

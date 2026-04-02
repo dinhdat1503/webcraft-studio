@@ -5,8 +5,9 @@
 /* Custom font via Google Fonts – được import trong layout.tsx */
 @layer base {
   :root {
-    --color-red: #E12028;
-    --color-red-dark: #b81820;
+    --color-blue: #5DADE2;
+    --color-navy: #202050;
+    --color-deep: #0B0F19;
   }
 
   html {
@@ -14,18 +15,19 @@
   }
 
   body {
-    @apply text-gray-800 bg-white overflow-x-hidden;
+    @apply text-slate-200 bg-brand-deep-space overflow-x-hidden;
   }
 
-  /* Headings default to heading font */
+  /* Headings default to heading font, catching bright color */
   h1, h2, h3, h4, h5, h6 {
+    @apply text-white;
     font-family: var(--font-heading), system-ui, sans-serif;
   }
 
   /* Custom scrollbar */
   ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-track { @apply bg-gray-100; }
-  ::-webkit-scrollbar-thumb { @apply bg-red-600 rounded-full; }
+  ::-webkit-scrollbar-track { @apply bg-brand-catchie-navy; }
+  ::-webkit-scrollbar-thumb { @apply bg-brand-catchie-blue rounded-full; }
 }
 
 /* Animations */

@@ -5,10 +5,10 @@ const CtaBanner: FC = () => {
   return (
     <section className="relative py-28 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-[#1a0505] to-red-900" />
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-catchie-navy via-brand-deep-space to-brand-catchie-blue/20" />
       <div className="absolute inset-0"
         style={{
-          backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.015) 1px, transparent 1px)`,
+          backgroundImage: `radial-gradient(circle, rgba(93,173,226,0.1) 1px, transparent 1px)`,
           backgroundSize: '40px 40px',
         }}
       />

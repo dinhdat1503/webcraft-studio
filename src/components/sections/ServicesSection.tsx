@@ -26,11 +26,11 @@ const ServiceIcon: FC<{ icon: string }> = ({ icon }) => {
 /** Services section – 3 cols on dark background */
 const ServicesSection: FC = () => {
   return (
-    <section id="services" className="py-24 bg-black">
+    <section id="services" className="py-24 bg-brand-deep-space">
       <div className="max-w-7xl mx-auto px-6">
         <SectionHeader
           tag="Dịch Vụ Của Chúng Tôi"
-          title={<>Ba trụ cột tạo nên <span className="text-red-600">thành công</span> cho bạn</>}
+          title={<>Ba trụ cột tạo nên <span className="text-brand-catchie-blue">thành công</span> cho bạn</>}
           light
         />
 
@@ -39,10 +39,10 @@ const ServicesSection: FC = () => {
             <div
               key={svc.id}
               className={`relative p-10 group transition-colors duration-300
-                ${svc.isFeatured ? 'bg-red-600' : 'hover:bg-white/[0.03]'}`}
+                ${svc.isFeatured ? 'bg-brand-catchie-blue' : 'hover:bg-brand-catchie-navy/40/[0.03]'}`}
             >
               {svc.badgeText && (
-                <span className="inline-block bg-white/20 text-white text-xs font-bold
+                <span className="inline-block bg-brand-catchie-navy/40/20 text-white text-xs font-bold
                   uppercase tracking-widest px-3 py-1 rounded mb-6">
                   {svc.badgeText}
                 </span>

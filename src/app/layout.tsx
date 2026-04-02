@@ -1,32 +1,32 @@
 import type { Metadata } from 'next';
-import { DM_Sans, DM_Serif_Display } from 'next/font/google';
+import { DM_Sans, Space_Grotesk } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import FloatingButtons from '@/components/ui/FloatingButtons';
 
 const dmsans = DM_Sans({
-  subsets: ['latin'], // DM Sans and DM Serif Display have limited vietnamese subset support natively in next/font, falling back to latin. We might need to ensure characters render correctly.
+  subsets: ['latin'],
   variable: '--font-body',
   display: 'swap',
   weight: ['400', '500', '700'],
 });
 
-const dmSerifDisplay = DM_Serif_Display({
-  subsets: ['latin'],
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin', 'vietnamese'],
   variable: '--font-heading',
   display: 'swap',
-  weight: ['400'], // DM Serif Display comes in 400 and 400 italic
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
-  title: 'WebCraft Studio – Thiết Kế Website Chuyên Nghiệp tại Việt Nam',
+  title: 'CATCHIE – Catch Your Customers Digitally',
   description:
-    'WebCraft Studio – Công ty thiết kế website chuyên nghiệp tại Việt Nam. Chúng tôi giúp doanh nghiệp bán hàng trực tuyến hiệu quả và tạo ấn tượng thương hiệu mạnh mẽ.',
-  keywords: ['thiết kế website', 'web design', 'website chuyên nghiệp', 'SEO', 'Next.js'],
+    'CATCHIE Studio – Giải pháp website toàn diện, giúp doanh nghiệp thu hút khách hàng trên nền tảng kỹ thuật số với trải nghiệm siêu việt.',
+  keywords: ['thiết kế website', 'web agency', 'catchie', 'SEO', 'Next.js'],
   openGraph: {
-    title: 'WebCraft Studio – Thiết Kế Website Chuyên Nghiệp',
-    description: 'Giúp doanh nghiệp phát triển mạnh mẽ trong kỷ nguyên số với website chuyên nghiệp.',
+    title: 'CATCHIE – Catch Your Customers Digitally',
+    description: 'Chinh phục không gian số với những thiết kế website độc bản từ CATCHIE.',
     type: 'website',
     locale: 'vi_VN',
   },
@@ -34,8 +34,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="vi" className={`${dmsans.variable} ${dmSerifDisplay.variable}`}>
-      <body className="font-body antialiased">
+    <html lang="vi" className={`${dmsans.variable} ${spaceGrotesk.variable}`}>
+      <body className="font-body antialiased selection:bg-brand-catchie-blue selection:text-white">
         <Header />
         <main>{children}</main>
         <Footer />

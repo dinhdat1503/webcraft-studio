@@ -23,17 +23,17 @@ interface NavigationOverlayProps {
   onClose: () => void;
 }
 
-/** Full-screen red navigation overlay với circle expand animation */
+/** Full-screen deep space navigation overlay với circle expand animation */
 const NavigationOverlay: FC<NavigationOverlayProps> = ({ isOpen, onClose }) => {
   return (
     <div
       className={`fixed inset-0 z-[105] overflow-hidden transition-all duration-300
         ${isOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
     >
-      {/* Red circle expanding from top-right */}
+      {/* Navy circle expanding from top-right */}
       <div
-        className={`absolute top-0 right-0 w-20 h-20 bg-red-600 rounded-full transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]
-          ${isOpen ? 'scale-[35]' : 'scale-0'}`}
+        className={`absolute top-0 right-0 w-20 h-20 bg-brand-catchie-navy rounded-full transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_0_100px_rgba(93,173,226,0.2)]
+          ${isOpen ? 'scale-[45]' : 'scale-0'}`}
         style={{ transformOrigin: 'top right' }}
       />
 
@@ -62,8 +62,8 @@ const NavigationOverlay: FC<NavigationOverlayProps> = ({ isOpen, onClose }) => {
           href="#contact"
           onClick={onClose}
           className="mt-4 font-heading text-lg font-black text-white
-            px-6 py-2.5 border-2 border-white/40 rounded
-            hover:bg-white/10 hover:border-white transition-all duration-300"
+            px-6 py-2.5 rounded-full bg-brand-catchie-blue shadow-[0_0_15px_rgba(93,173,226,0.4)]
+            hover:shadow-[0_0_25px_rgba(93,173,226,0.6)] hover:bg-blue-400 transition-all duration-300"
         >
           Liên Hệ
         </Link>

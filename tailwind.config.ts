@@ -16,15 +16,19 @@ const config: Config = {
       },
       colors: {
         brand: {
-          red:      '#E12028',
-          'red-dark': '#b81820',
-          'red-light': '#ff3a42',
+          'deep-space': '#0B0F19',
+          'catchie-navy': '#202050',
+          'catchie-blue': '#5DADE2',
+          'catchie-light': '#E0F2FE',
         },
       },
       animation: {
         'fade-in-down': 'fadeInDown 0.8s ease both',
         'fade-in-up':   'fadeInUp 0.8s ease 0.1s both',
         'bounce-slow':  'bounce 2s ease-in-out infinite',
+        'twinkle':      'twinkle 3s ease-in-out infinite',
+        'float':        'float 6s ease-in-out infinite',
+        'glow':         'glow 3s ease-in-out infinite alternate',
       },
       keyframes: {
         fadeInDown: {
@@ -35,11 +39,23 @@ const config: Config = {
           from: { opacity: '0', transform: 'translateY(30px)' },
           to:   { opacity: '1', transform: 'translateY(0)' },
         },
+        twinkle: {
+          '0%, 100%': { opacity: '0.2' },
+          '50%': { opacity: '1' },
+        },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        glow: {
+          from: { boxShadow: '0 0 10px #5DADE2, 0 0 20px #5DADE2' },
+          to:   { boxShadow: '0 0 20px #5DADE2, 0 0 30px #5DADE2' },
+        },
       },
       backgroundImage: {
-        'grid-red': `
-          linear-gradient(rgba(225,32,40,0.05) 1px, transparent 1px),
-          linear-gradient(90deg, rgba(225,32,40,0.05) 1px, transparent 1px)
+        'grid-blue': `
+          linear-gradient(rgba(93,173,226,0.05) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(93,173,226,0.05) 1px, transparent 1px)
         `,
       },
       backgroundSize: {
