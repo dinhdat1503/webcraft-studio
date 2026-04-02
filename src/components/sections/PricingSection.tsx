@@ -5,8 +5,8 @@ import { pricingData } from '@/data/pricing.data';
 
 const PricingSection: FC = () => {
   return (
-    <section id="pricing" className="py-24 bg-[#111111]">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="pricing" className="section-pad bg-brand-deep-space">
+      <div className="page-container">
         <SectionHeader
           tag="Bảng Giá"
           title={<>Gói dịch vụ phù hợp<br />cho <span className="text-brand-catchie-blue">mọi nhu cầu</span></>}
@@ -18,10 +18,10 @@ const PricingSection: FC = () => {
           {pricingData.map((plan) => (
             <div
               key={plan.id}
-              className={`relative rounded-2xl p-8 border transition-all duration-300 hover:-translate-y-1.5
+              className={`relative rounded-2xl p-7 md:p-8 border transition-all duration-300 hover:-translate-y-1.5
                 ${plan.isFeatured
-                  ? 'bg-brand-catchie-blue border-brand-catchie-blue hover:bg-blue-400'
-                  : 'bg-brand-catchie-navy/40/[0.04] border-white/10 hover:bg-brand-catchie-navy/40/[0.07] hover:border-white/20'
+                  ? 'bg-brand-catchie-blue/20 border-brand-catchie-blue/70 ring-2 ring-brand-catchie-blue/30 md:scale-[1.02]'
+                  : 'cosmic-surface surface-hover hover:bg-brand-catchie-navy/35 hover:border-white/20'
                 }`}
             >
               {plan.badgeText && (
@@ -68,7 +68,7 @@ const PricingSection: FC = () => {
                 href="#contact"
                 variant={plan.isFeatured ? 'outline-white' : 'outline-dark'}
                 fullWidth
-                className={plan.isFeatured ? '' : '!border-white/30 !text-white hover:!bg-brand-catchie-navy/40 hover:!text-black'}
+                className={plan.isFeatured ? '' : '!border-white/30 !text-white hover:!bg-brand-catchie-blue/25 hover:!text-white'}
               >
                 {plan.ctaText}
               </Button>

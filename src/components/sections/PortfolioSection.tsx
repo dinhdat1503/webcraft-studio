@@ -7,22 +7,21 @@ import { portfolioData } from '@/data/portfolio.data';
 /** Portfolio grid section – 3 column grid with hover overlay */
 const PortfolioSection: FC = () => {
   return (
-    <section id="portfolio" className="py-24 bg-brand-catchie-navy/40">
+    <section id="portfolio" className="section-pad bg-brand-catchie-navy/25">
       <SectionHeader
         tag="Dự Án Tiêu Biểu"
         title={<>Những thiết kế <span className="text-brand-catchie-blue">ấn tượng nhất</span> của chúng tôi</>}
       />
 
-      <div className="max-w-[1400px] mx-auto border border-brand-catchie-blue/20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className="page-container">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {portfolioData.map((item) => (
             <div
               key={item.id}
-              className="border-b border-r border-brand-catchie-blue/20 last:border-r-0
-                [&:nth-child(3n)]:border-r-0 group cursor-pointer overflow-hidden"
+              className="cosmic-surface surface-hover rounded-2xl group cursor-pointer overflow-hidden"
             >
               {/* Image + overlay */}
-              <div className="relative aspect-[4/3] overflow-hidden">
+              <div className="relative aspect-[16/10] overflow-hidden">
                 <Image
                   src={item.imageSrc}
                   alt={item.imageAlt}
@@ -37,7 +36,7 @@ const PortfolioSection: FC = () => {
                     uppercase tracking-widest px-3 py-1 rounded mb-3 w-fit">
                     {item.category}
                   </span>
-                  <h3 className="font-heading text-xl font-black text-white mb-2">
+                  <h3 className="font-heading text-lg md:text-xl font-semibold text-white mb-2">
                     {item.shortTitle}
                   </h3>
                   <p className="text-white/75 text-sm leading-relaxed mb-4">{item.description}</p>
@@ -49,10 +48,10 @@ const PortfolioSection: FC = () => {
 
               {/* Info */}
               <div className="p-6">
-                <span className="text-brand-catchie-blue text-xs font-bold uppercase tracking-widest block mb-1">
+                <span className="text-brand-catchie-blue text-xs font-bold uppercase tracking-[0.18em] block mb-1">
                   {item.category}
                 </span>
-                <h3 className="font-heading text-sm font-bold text-white leading-snug">
+                <h3 className="font-heading text-base font-semibold text-white leading-snug">
                   {item.title}
                 </h3>
               </div>

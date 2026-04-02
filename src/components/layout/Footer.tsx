@@ -2,6 +2,7 @@
 
 import { type FC, useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import Button from '@/components/ui/Button';
 import { ContactService } from '@/lib/services/ContactService';
 import type { ContactFormData } from '@/types';
@@ -40,12 +41,23 @@ const Footer: FC = () => {
       {/* Background stars effect */}
       <div className="absolute inset-0 bg-grid-blue opacity-10"></div>
       
-      <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 relative z-10">
+      <div className="page-container py-20 relative z-10">
+        <div className="cosmic-surface rounded-3xl p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
         {/* Brand */}
         <div className="lg:col-span-1">
-          <Link href="/" className="flex items-center gap-2 mb-5">
-            <img src="/assets/catchie-logo.png" alt="CATCHIE" className="h-10 w-auto" />
+          <Link href="/" className="flex items-center gap-3 mb-5 group w-fit">
+            <span className="absolute -inset-1 rounded-xl bg-brand-catchie-blue/12 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <span className="relative h-14 w-[152px] overflow-hidden">
+              <Image
+                src="/assets/catchie-fullmark-transparent.png"
+                alt="CATCHIE"
+                fill
+                sizes="152px"
+                quality={100}
+                className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.02] drop-shadow-[0_0_10px_rgba(93,173,226,0.4)]"
+              />
+            </span>
           </Link>
           <p className="text-sm leading-relaxed text-white/55 max-w-xs">
             Công ty thiết kế website chuyên nghiệp tại Việt Nam. Chúng tôi giúp doanh nghiệp phát triển mạnh mẽ trong kỷ nguyên số.
@@ -112,9 +124,9 @@ const Footer: FC = () => {
                   value={formData[field.name as keyof ContactFormData]}
                   onChange={handleChange}
                   className={`w-full px-4 py-3 bg-brand-catchie-navy/50 border rounded-lg text-white text-sm
-                    placeholder:text-white/35 focus:outline-none focus:border-brand-catchie-blue focus:bg-brand-catchie-blue/5
+                    placeholder:text-white/35 focus:outline-none focus:border-brand-catchie-blue focus:bg-brand-catchie-blue/5 focus:ring-2 focus:ring-brand-catchie-blue/30
                     transition-all duration-300
-                    ${errors[field.name] ? 'border-red-500' : 'border-white/10'}`}
+                    ${errors[field.name] ? 'border-brand-catchie-blue' : 'border-white/10'}`}
                 />
                 {errors[field.name] && (
                   <p className="text-brand-catchie-blue text-xs mt-1">{errors[field.name]}</p>
@@ -127,7 +139,7 @@ const Footer: FC = () => {
               value={formData.service}
               onChange={handleChange}
               className="w-full px-4 py-3 bg-brand-catchie-navy/50 border border-white/10 rounded-lg
-                text-white/50 text-sm focus:outline-none focus:border-brand-catchie-blue transition-all duration-300"
+                text-white/50 text-sm focus:outline-none focus:border-brand-catchie-blue focus:ring-2 focus:ring-brand-catchie-blue/30 transition-all duration-300"
             >
               <option value="">Dịch vụ quan tâm</option>
               <option value="design">Thiết kế website</option>
@@ -148,10 +160,11 @@ const Footer: FC = () => {
         </div>
 
       </div>
+      </div>
 
       {/* Footer bottom */}
       <div className="border-t border-white/[0.07] relative z-10">
-        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/35">
+        <div className="page-container py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/35">
           <p>© 2025 CATCHIE. Bảo lưu mọi quyền.</p>
           <div className="flex gap-6">
             <Link href="#" className="hover:text-brand-catchie-blue transition-colors">Chính Sách Bảo Mật</Link>

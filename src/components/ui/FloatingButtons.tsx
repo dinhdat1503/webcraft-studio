@@ -11,14 +11,14 @@ const FloatingButtons: FC = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
-    <div className="fixed right-5 bottom-5 z-50 flex flex-col gap-3">
+    <div className="fixed right-4 md:right-5 bottom-4 md:bottom-5 z-50 flex flex-col gap-3">
       {/* Scroll to top */}
       <button
         onClick={scrollToTop}
         aria-label="Cuộn lên đầu trang"
         className={`w-12 h-12 rounded-full bg-brand-catchie-blue text-white flex items-center justify-center
           shadow-[0_0_15px_rgba(93,173,226,0.5)] hover:shadow-[0_0_25px_rgba(93,173,226,0.8)] hover:bg-blue-400 hover:-translate-y-1 transition-all duration-300
-          ${isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+          ${isVisible ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 translate-y-3 pointer-events-none'}`}
       >
         <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />

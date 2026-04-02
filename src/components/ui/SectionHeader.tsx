@@ -19,25 +19,25 @@ const SectionHeader: FC<SectionHeaderProps> = ({
   className = '',
 }) => {
   return (
-    <div className={`${center ? 'text-center' : ''} mb-16 ${className}`}>
+    <div className={`${center ? 'text-center' : ''} mb-14 md:mb-16 ${className}`}>
       <span
-        className={`inline-flex items-center gap-2 text-xs font-bold tracking-[0.15em] uppercase mb-4
-          before:content-[''] before:inline-block before:w-5 before:h-0.5
+        className={`inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.2em] uppercase mb-5
+          before:content-[''] before:inline-block before:w-6 before:h-px
           ${light
             ? 'text-white/70 before:bg-white/50'
-            : 'text-red-600 before:bg-red-600'
+            : 'text-brand-catchie-blue before:bg-brand-catchie-blue'
           }`}
       >
         {tag}
       </span>
       <h2
-        className={`font-heading text-4xl md:text-5xl font-black leading-tight mb-6
-          ${light ? 'text-white' : 'text-gray-900'}`}
+        className={`font-heading text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.08] tracking-tight mb-5
+          ${light ? 'text-white' : 'text-white'}`}
       >
         {title}
       </h2>
       {description && (
-        <p className={`text-lg max-w-xl mx-auto ${light ? 'text-white/70' : 'text-gray-500'}`}>
+        <p className={`text-base md:text-lg max-w-2xl mx-auto ${light ? 'text-white/70' : 'text-slate-300'}`}>
           {description}
         </p>
       )}

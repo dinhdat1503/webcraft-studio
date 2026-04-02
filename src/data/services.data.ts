@@ -6,7 +6,7 @@ export const servicesData: ServiceItem[] = [
     icon: 'layout',
     title: 'Thiết Kế Website',
     description:
-      'Khám phá cách WebCraft Studio tạo ra những website chuyên nghiệp, giúp doanh nghiệp bán hàng trực tuyến hiệu quả và tạo ấn tượng thương hiệu tốt hơn thông qua chiến lược thiết kế ưu việt.',
+      'Khám phá cách CATCHIE tạo ra những website chuyên nghiệp, giúp doanh nghiệp bán hàng trực tuyến hiệu quả và tạo ấn tượng thương hiệu tốt hơn thông qua chiến lược thiết kế ưu việt.',
     features: [
       'Thiết kế UI/UX độc quyền',
       'Responsive trên mọi thiết bị',

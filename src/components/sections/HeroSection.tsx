@@ -8,7 +8,7 @@ const HeroSection: FC = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 pt-32 pb-16 bg-brand-deep-space"
+      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden px-6 pt-36 pb-20"
     >
       {/* Background & Stars */}
       <div className="absolute inset-0 bg-grid-blue opacity-20 pointer-events-none" />
@@ -22,34 +22,35 @@ const HeroSection: FC = () => {
       <div className="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] bg-[#202050]/50 blur-[100px] rounded-full pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-4xl w-full text-center">
+      <div className="relative z-10 max-w-5xl w-full text-center">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-brand-catchie-blue/10 border border-brand-catchie-blue/30
-          text-brand-catchie-light px-5 py-2 rounded-full text-sm font-semibold mb-8 animate-fade-in-down shadow-[0_0_15px_rgba(93,173,226,0.2)]">
-          <span className="animate-pulse">✨</span> Nền tảng Digital Marketing & Website
+        <div className="inline-flex items-center gap-2 bg-brand-catchie-blue/10 border border-brand-catchie-blue/35
+          text-brand-catchie-light px-5 py-2 rounded-full text-xs md:text-sm font-semibold mb-8 animate-fade-in-down shadow-[0_0_20px_rgba(93,173,226,0.2)]">
+          <span className="animate-pulse">✨</span> Nền tảng Website thế hệ mới
         </div>
 
         {/* Title */}
-        <h1 className="font-heading font-bold text-6xl md:text-8xl text-white leading-[1.05] tracking-tighter mb-6 relative">
+        <h1 className="font-heading font-semibold text-5xl md:text-7xl lg:text-8xl text-white leading-[1.02] tracking-tight mb-6 relative">
           Catch Your
           <br />
-          Customers <span className="text-brand-catchie-blue italic font-light drop-shadow-[0_0_20px_rgba(93,173,226,0.6)]">Digitally.</span>
+          Customers <span className="text-brand-catchie-blue italic font-normal drop-shadow-[0_0_22px_rgba(93,173,226,0.55)]">Digitally.</span>
         </h1>
 
         {/* Description */}
-        <p className="text-slate-300 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10">
-          <strong className="text-white">CATCHIE</strong> tạo ra sức hút như <strong className="text-brand-catchie-blue">từ trường nam châm</strong>. Khám phá không gian số với những trải nghiệm website độc bản, thu hút và giữ chân khách hàng mục tiêu của bạn một cách tự nhiên nhất.
+        <p className="text-slate-300 text-base md:text-lg lg:text-xl max-w-3xl mx-auto leading-relaxed mb-10">
+          <strong className="text-white">CATCHIE</strong> tạo ra sức hút như <strong className="text-brand-catchie-blue">từ trường nam châm</strong>,
+          kết hợp chiến lược thương hiệu, tốc độ và chuyển đổi để doanh nghiệp tăng trưởng vững trên không gian số.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex gap-4 justify-center flex-wrap mb-16">
+        <div className="flex gap-3 md:gap-4 justify-center flex-wrap mb-14">
           <Button href="#contact" size="lg">Khởi Hành Ngay</Button>
           <Button href="#portfolio" variant="outline" size="lg">Khám Phá Vũ Trụ</Button>
         </div>
 
         {/* Stats */}
-        <div className="flex flex-wrap items-center justify-center gap-6
-          bg-brand-catchie-navy/30 border border-brand-catchie-blue/10 backdrop-blur-md rounded-3xl px-8 py-6 shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
+        <div className="cosmic-surface rounded-3xl px-5 py-6 md:px-8 md:py-7">
+          <div className="flex flex-wrap items-center justify-center gap-6">
           {heroStats.map((stat, i) => (
             <div key={stat.id} className="flex items-center gap-6">
               <StatCounter target={stat.value} suffix={stat.suffix} label={stat.label} />
@@ -58,6 +59,7 @@ const HeroSection: FC = () => {
               )}
             </div>
           ))}
+          </div>
         </div>
       </div>
 

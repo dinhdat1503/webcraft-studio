@@ -26,34 +26,35 @@ const ServiceIcon: FC<{ icon: string }> = ({ icon }) => {
 /** Services section – 3 cols on dark background */
 const ServicesSection: FC = () => {
   return (
-    <section id="services" className="py-24 bg-brand-deep-space">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="services" className="section-pad bg-brand-deep-space">
+      <div className="page-container">
         <SectionHeader
           tag="Dịch Vụ Của Chúng Tôi"
           title={<>Ba trụ cột tạo nên <span className="text-brand-catchie-blue">thành công</span> cho bạn</>}
           light
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {servicesData.map((svc) => (
             <div
               key={svc.id}
-              className={`relative p-10 group transition-colors duration-300
-                ${svc.isFeatured ? 'bg-brand-catchie-blue' : 'hover:bg-brand-catchie-navy/40/[0.03]'}`}
+              className={`relative cosmic-surface surface-hover rounded-2xl p-7 md:p-9 group
+                ${svc.isFeatured ? 'ring-2 ring-brand-catchie-blue/60 bg-brand-catchie-blue/20' : 'hover:bg-brand-catchie-navy/35'}`}
             >
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-brand-catchie-blue/8 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               {svc.badgeText && (
-                <span className="inline-block bg-brand-catchie-navy/40/20 text-white text-xs font-bold
+                <span className="inline-block bg-brand-catchie-blue text-white text-xs font-bold
                   uppercase tracking-widest px-3 py-1 rounded mb-6">
                   {svc.badgeText}
                 </span>
               )}
 
-              <div className="w-16 h-16 border-2 border-white/15 rounded-xl flex items-center justify-center mb-6
+              <div className="relative w-16 h-16 border-2 border-white/15 rounded-xl flex items-center justify-center mb-6
                 group-hover:border-white/40 group-hover:-translate-y-1 transition-all duration-300">
                 <ServiceIcon icon={svc.icon} />
               </div>
 
-              <h3 className="font-heading text-2xl font-black text-white mb-4">{svc.title}</h3>
+              <h3 className="font-heading text-2xl font-semibold text-white mb-4">{svc.title}</h3>
               <p className="text-white/65 text-sm leading-relaxed mb-6">{svc.description}</p>
 
               <ul className="space-y-2 mb-8">

@@ -13,13 +13,13 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-brand-catchie-blue text-white border-brand-catchie-blue hover:bg-blue-400 hover:border-blue-400 hover:shadow-[0_0_20px_rgba(93,173,226,0.6)] hover:-translate-y-1',
+    'bg-brand-catchie-blue text-white border-brand-catchie-blue/80 hover:bg-blue-400 hover:border-blue-300 hover:shadow-[0_0_26px_rgba(93,173,226,0.55)] hover:-translate-y-1',
   outline:
-    'bg-transparent text-white border-white/50 hover:border-brand-catchie-blue hover:text-brand-catchie-blue hover:bg-brand-catchie-blue/10 hover:shadow-[0_0_15px_rgba(93,173,226,0.2)]',
+    'bg-white/5 text-white border-white/35 hover:border-brand-catchie-blue hover:text-brand-catchie-light hover:bg-brand-catchie-blue/15 hover:shadow-[0_0_18px_rgba(93,173,226,0.25)]',
   'outline-dark':
-    'bg-transparent text-slate-300 border-slate-600 hover:border-brand-catchie-blue hover:text-brand-catchie-blue hover:shadow-[0_0_15px_rgba(93,173,226,0.2)]',
+    'bg-brand-catchie-navy/20 text-slate-200 border-brand-catchie-blue/30 hover:border-brand-catchie-blue hover:text-white hover:bg-brand-catchie-blue/15 hover:shadow-[0_0_18px_rgba(93,173,226,0.25)]',
   'outline-white':
-    'bg-transparent text-white border-white hover:bg-white hover:text-brand-deep-space',
+    'bg-transparent text-white border-white/80 hover:bg-white hover:text-brand-deep-space',
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -39,7 +39,7 @@ const Button: FC<ButtonProps> = ({
   ...rest
 }) => {
   const base =
-    'inline-flex items-center justify-center gap-2 rounded-full font-heading font-bold border-2 transition-all duration-300 cursor-pointer overflow-hidden relative';
+    'inline-flex items-center justify-center gap-2 rounded-xl font-heading font-bold border-2 transition-all duration-300 cursor-pointer overflow-hidden relative';
   const classes = [
     base,
     variantClasses[variant],

@@ -22,7 +22,7 @@ const StatCounter: FC<StatCounterProps> = ({ target, suffix, label }) => {
         >
           {count}
         </span>
-        <span className="font-heading text-2xl font-black text-red-500">
+        <span className="font-heading text-2xl font-black text-brand-catchie-blue">
           {suffix}
         </span>
       </div>

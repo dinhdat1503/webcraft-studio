@@ -3,8 +3,8 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import { techData, processSteps } from '@/data/tech.data';
 
 export const TechStackSection: FC = () => (
-  <section id="tech" className="py-20 bg-brand-catchie-navy/40 border-y border-gray-100">
-    <div className="max-w-7xl mx-auto px-6">
+  <section id="tech" className="section-pad bg-brand-catchie-navy/20 border-y border-brand-catchie-blue/15">
+    <div className="page-container">
       <SectionHeader
         tag="Công Nghệ"
         title={<>Công cụ & công nghệ<br />chúng tôi sử dụng</>}
@@ -13,8 +13,8 @@ export const TechStackSection: FC = () => (
         {techData.map((tech) => (
           <div
             key={tech.id}
-            className="flex items-center gap-3 px-6 py-3.5 border-[1.5px] border-brand-catchie-blue/20 rounded-full
-              text-sm font-semibold text-gray-700 hover:border-brand-catchie-blue hover:text-brand-catchie-blue
+            className="flex items-center gap-3 px-6 py-3.5 border border-brand-catchie-blue/25 rounded-full
+              text-sm font-semibold text-slate-200 hover:border-brand-catchie-blue hover:text-brand-catchie-light hover:bg-brand-catchie-blue/10
               hover:-translate-y-1 transition-all duration-300 cursor-default"
           >
             <span className="text-xl leading-none">{tech.emoji}</span>
@@ -27,20 +27,19 @@ export const TechStackSection: FC = () => (
 );
 
 export const ProcessSection: FC = () => (
-  <section id="process" className="py-24 bg-brand-deep-space">
-    <div className="max-w-7xl mx-auto px-6">
+  <section id="process" className="section-pad bg-brand-deep-space">
+    <div className="page-container">
       <SectionHeader
         tag="Quy Trình"
         title={<>4 bước đơn giản để có<br />website <span className="text-brand-catchie-blue">mơ ước</span></>}
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {processSteps.map((step, idx) => (
           <div
             key={step.id}
-            className="relative p-8 group hover:bg-brand-catchie-navy/40 hover:shadow-lg hover:rounded-xl hover:z-10
-              transition-all duration-300"
+            className="relative cosmic-surface rounded-2xl p-7 group hover:bg-brand-catchie-navy/35 hover:shadow-lg hover:z-10 transition-all duration-300"
           >
-            <span className="block font-heading text-6xl font-black text-gray-100
+            <span className="block font-heading text-6xl font-black text-white/30
               group-hover:text-brand-catchie-blue transition-colors duration-300 leading-none mb-4">
               {step.number}
             </span>
