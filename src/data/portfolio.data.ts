@@ -11,6 +11,7 @@ export const portfolioData: PortfolioItem[] = [
     imageSrc: '/assets/portfolio/portfolio_ecommerce.png',
     imageAlt: 'Website Thương Mại Điện Tử FashionMall Vietnam',
     tags: ['E-Commerce', 'React', 'Node.js'],
+    detailLink: '/dich-vu/thuong-mai-dien-tu',
   },
   {
     id: 'techvision',

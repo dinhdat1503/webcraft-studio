@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { ContactService } from '@/lib/services/ContactService';
+import { EmailService } from '@/lib/services/EmailService';
 import type { ContactFormData } from '@/types';
 
 /**
  * POST /api/contact
- * Nhận dữ liệu form, validate và xử lý (có thể mở rộng để gửi email qua Nodemailer)
+ * Nhận dữ liệu form, validate và gửi mail qua Nodemailer.
  */
 export async function POST(request: NextRequest) {
   try {
@@ -26,9 +27,17 @@ export async function POST(request: NextRequest) {
       console.log('[Contact Form]', service.formatForDisplay(body));
     }
 
-    // TODO: Tích hợp Nodemailer để gửi email thực tế
-    // const transporter = nodemailer.createTransport({ ... });
-    // await transporter.sendMail({ ... });
+    // Gửi email thực tế qua Nodemailer (EmailService)
+    const emailService = EmailService.getInstance();
+    const emailResult = await emailService.sendContactNotification(body);
+
+    if (!emailResult.success) {
+      console.error('Không thể gửi mail:', emailResult.error);
+      return NextResponse.json(
+        { success: false, message: 'Lỗi cấu hình Email Server. Vui lòng kiểm tra lại.' },
+        { status: 500 },
+      );
+    }
 
     return NextResponse.json(
       { success: true, message: 'Yêu cầu đã được gửi thành công! Chúng tôi sẽ liên hệ trong vòng 24h.' },

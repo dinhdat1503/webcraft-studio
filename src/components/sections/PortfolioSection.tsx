@@ -1,5 +1,6 @@
 import { type FC } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Button from '@/components/ui/Button';
 import { portfolioData } from '@/data/portfolio.data';
@@ -40,9 +41,9 @@ const PortfolioSection: FC = () => {
                     {item.shortTitle}
                   </h3>
                   <p className="text-white/75 text-sm leading-relaxed mb-4">{item.description}</p>
-                  <a href="#contact" className="text-blue-300 font-bold text-sm hover:text-blue-200 transition-colors">
+                  <Link href={item.detailLink || '#contact'} className="text-blue-300 font-bold text-sm hover:text-blue-200 transition-colors">
                     Tìm hiểu thêm →
-                  </a>
+                  </Link>
                 </div>
               </div>
 

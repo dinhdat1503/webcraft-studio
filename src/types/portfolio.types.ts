@@ -7,6 +7,7 @@ export interface PortfolioItem {
   imageSrc: string;
   imageAlt: string;
   tags: string[];
+  detailLink?: string;
 }
 
 export interface PortfolioFilter {
