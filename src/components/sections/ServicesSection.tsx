@@ -30,7 +30,7 @@ const ServicesSection: FC = () => {
       <div className="page-container">
         <SectionHeader
           tag="Dịch Vụ Của Chúng Tôi"
-          title={<>Ba trụ cột tạo nên <span className="text-brand-catchie-blue">thành công</span> cho bạn</>}
+          title={<>3 trụ cột tạo nên <span className="text-brand-catchie-blue">thành công</span> cho bạn</>}
           light
         />
 

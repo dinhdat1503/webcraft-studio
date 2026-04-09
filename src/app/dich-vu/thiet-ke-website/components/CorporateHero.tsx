@@ -49,7 +49,7 @@ const CorporateHero: FC = () => {
 
             <div className="flex flex-wrap gap-4">
               <Link
-                href="#contact"
+                href="https://zalo.me/0971692675" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-heading font-bold text-white
                   bg-brand-catchie-blue border-2 border-brand-catchie-blue/80
                   hover:bg-blue-400 hover:border-blue-300 hover:shadow-[0_0_30px_rgba(93,173,226,0.5)] hover:-translate-y-1
@@ -58,7 +58,7 @@ const CorporateHero: FC = () => {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 13.6 19.79 19.79 0 011.62 5a2 2 0 011.995-2H6.5a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 10.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
                 </svg>
-                Nhận tư vấn miễn phí
+                Liên hệ ngay hôm nay
               </Link>
               <Link
                 href="#overview"

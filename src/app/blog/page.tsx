@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { blogData } from '@/data/blog.data';
 
 export const metadata: Metadata = {
-  title: 'Blog – Kiến Thức & Tin Tức Thiết Kế Web | CATCHIE',
+  title: 'Blog | CATCHIE',
   description:
     'Khám phá các bài viết chuyên sâu về thiết kế website, SEO, marketing online và xu hướng công nghệ mới nhất từ đội ngũ chuyên gia CATCHIE.',
   keywords: [
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     'CATCHIE blog',
   ],
   openGraph: {
-    title: 'Blog – Kiến Thức & Tin Tức Thiết Kế Web | CATCHIE',
+    title: 'Blog | CATCHIE',
     description:
       'Bài viết chuyên sâu về thiết kế web, SEO, e-commerce và xu hướng công nghệ từ CATCHIE.',
     type: 'website',
@@ -27,7 +27,7 @@ export default function BlogPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative pt-36 pb-16 overflow-hidden">
+      <section className="relative pt-44 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-deep-space via-brand-catchie-navy/30 to-brand-deep-space" />
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-catchie-blue/6 rounded-full blur-[120px]" />
         <div className="absolute inset-0 bg-grid-blue bg-grid opacity-20" />
@@ -42,7 +42,7 @@ export default function BlogPage() {
           <div className="text-center max-w-3xl mx-auto">
             <span className="inline-flex items-center gap-2 text-[11px] font-bold tracking-[0.2em] uppercase text-brand-catchie-blue mb-5
               before:content-[''] before:inline-block before:w-6 before:h-px before:bg-brand-catchie-blue">
-              Kiến Thức & Blog
+              Blog
             </span>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-5">
               Insights từ chuyên gia{' '}

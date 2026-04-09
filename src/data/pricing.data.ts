@@ -30,7 +30,7 @@ export const pricingData: PricingPlan[] = [
       { text: 'Thiết kế 10-15 trang', included: true },
       { text: 'Responsive Mobile', included: true },
       { text: 'Tên miền 1 năm', included: true },
-      { text: 'Hosting NVME (15-50GB)', included: true },
+      { text: 'Hosting NVME 1 năm (15-50GB)', included: true },
       { text: 'RAM 4-6GB', included: true },
       { text: 'SSL Certificate', included: true },
       { text: 'SEO chuyên sâu', included: true },

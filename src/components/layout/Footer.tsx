@@ -98,9 +98,9 @@ const Footer: FC = () => {
               { label: 'Giới Thiệu',         href: '#about' },
               { label: 'Dự Án Tiêu Biểu',    href: '#portfolio' },
               { label: 'Quy Trình Làm Việc',  href: '#process' },
-              { label: 'Blog & Tin Tức',      href: '/blog' },
+              { label: 'Blog',                href: '/blog' },
               { label: 'Tuyển Dụng',          href: '#' },
-              { label: 'Liên Hệ',            href: '/lien-he' },
+              { label: 'Liên Hệ & Tư Vấn',   href: '/lien-he' },
             ].map(link => (
               <li key={link.label}><Link href={link.href} className="text-white/50 hover:text-brand-catchie-blue hover:pl-1 transition-all duration-200">{link.label}</Link></li>
             ))}

@@ -13,7 +13,7 @@ const navItems = [
   { label: 'Dự án', href: '#portfolio' },
   { label: 'Bảng giá', href: '#pricing' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Liên hệ', href: '/lien-he' },
+  { label: 'Liên hệ & tư vấn', href: '/lien-he' },
 ];
 
 /** Sticky header với logo, hamburger và navigation overlay */

@@ -34,7 +34,7 @@ const HealthcareCTA: FC = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="#contact"
+                href="https://zalo.me/0971692675" target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-10 py-4 rounded-xl font-heading font-bold text-white
                   bg-teal-600 border-2 border-teal-500/80
                   hover:bg-teal-500 hover:border-teal-400 hover:shadow-[0_0_35px_rgba(20,184,166,0.55)] hover:-translate-y-1
@@ -43,7 +43,7 @@ const HealthcareCTA: FC = () => {
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                 </svg>
-                Nhận tư vấn miễn phí
+                Liên hệ ngay hôm nay
               </Link>
               <Link
                 href="/"

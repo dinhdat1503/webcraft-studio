@@ -9,7 +9,7 @@ const BlogSection: FC = () => {
     <section id="blog" className="section-pad bg-brand-catchie-navy/20">
       <div className="page-container">
         <SectionHeader
-          tag="Kiến Thức & Blog"
+          tag="Blog"
           title={<>Insights từ chuyên gia<br />thiết kế web</>}
           light
         />
@@ -54,7 +54,7 @@ const BlogSection: FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button href="#" variant="outline-dark">Xem thêm...</Button>
+          <Button href="/blog" variant="outline-dark">Xem thêm...</Button>
         </div>
       </div>
     </section>

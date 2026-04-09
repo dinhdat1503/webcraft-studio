@@ -99,7 +99,7 @@ export class EmailService {
    * (Tính năng phụ) Gửi email cấu hình sẵn auto-reply Cám ơn khách hàng.
    * Để trống chờ tích hợp thêm nếu cần thiết.
    */
-  public async sendAutoReplyToCustomer(data: ContactFormData): Promise<EmailResult> {
+  public async sendAutoReplyToCustomer(): Promise<EmailResult> {
     // Tùy chọn cài đặt Auto-reply nếu có field mail khách hàng
     return { success: true, message: 'Feature not fully implemented' };
   }

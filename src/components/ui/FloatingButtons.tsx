@@ -27,7 +27,7 @@ const FloatingButtons: FC = () => {
 
       {/* Gọi điện */}
       <a
-        href="tel:0901234567"
+        href="tel:0971692675"
         aria-label="Gọi điện"
         className="w-12 h-12 rounded-full bg-green-500 text-white flex items-center justify-center
           shadow-lg hover:bg-green-600 hover:-translate-y-1 transition-all duration-300"
@@ -40,7 +40,7 @@ const FloatingButtons: FC = () => {
 
       {/* Zalo */}
       <a
-        href="https://zalo.me/0901234567"
+        href="https://zalo.me/0971692675"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat Zalo"
