@@ -1,8 +1,9 @@
 import type { ContactFormData, ValidationResult, ApiResponse } from '@/types';
+import { submitContactForm } from '@/app/actions/contact';
 
 /**
  * ContactService – Singleton class xử lý toàn bộ logic liên hệ
- * Bao gồm: validate, gửi request đến API, và format dữ liệu
+ * Bao gồm: validate, gửi request qua Server Action, và format dữ liệu
  */
 export class ContactService {
   private static instance: ContactService;
@@ -40,17 +41,11 @@ export class ContactService {
   }
 
   /**
-   * Gửi dữ liệu form đến API backend
+   * Gửi dữ liệu form qua Server Actions
    */
   public async send(data: ContactFormData): Promise<ApiResponse> {
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-
-      const result: ApiResponse = await response.json();
+      const result = await submitContactForm(data);
       return result;
     } catch {
       return {
