@@ -95,12 +95,12 @@ const Footer: FC = () => {
           <h4 className="text-white text-sm font-bold uppercase tracking-[0.1em] mb-5">Công Ty</h4>
           <ul className="space-y-3 text-sm">
             {[
-              { label: 'Giới Thiệu',         href: '#about' },
-              { label: 'Dự Án Tiêu Biểu',    href: '#portfolio' },
-              { label: 'Quy Trình Làm Việc',  href: '#process' },
-              { label: 'Blog',                href: '/blog' },
-              { label: 'Tuyển Dụng',          href: '#' },
-              { label: 'Liên Hệ & Tư Vấn',   href: '/lien-he' },
+              { label: 'Giới Thiệu',         href: '/gioi-thieu' },
+              { label: 'Dịch Vụ',            href: '/dich-vu' },
+              { label: 'Dự Án Tiêu Biểu',    href: '/du-an' },
+              { label: 'Bảng Giá',           href: '/bang-gia' },
+              { label: 'Blog',               href: '/blog' },
+              { label: 'Liên Hệ',            href: '/lien-he' },
             ].map(link => (
               <li key={link.label}><Link href={link.href} className="text-white/50 hover:text-brand-catchie-blue hover:pl-1 transition-all duration-200">{link.label}</Link></li>
             ))}

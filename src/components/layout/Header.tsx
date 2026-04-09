@@ -8,12 +8,12 @@ import { useScrollY } from '@/hooks/useScrollY';
 import NavigationOverlay from './NavigationOverlay';
 
 const navItems = [
-  { label: 'Giới thiệu', href: '#about' },
-  { label: 'Dịch vụ', href: '#services' },
-  { label: 'Dự án', href: '#portfolio' },
-  { label: 'Bảng giá', href: '#pricing' },
+  { label: 'Giới thiệu', href: '/gioi-thieu' },
+  { label: 'Dịch vụ', href: '/dich-vu' },
+  { label: 'Dự án', href: '/du-an' },
+  { label: 'Bảng giá', href: '/bang-gia' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Liên hệ & tư vấn', href: '/lien-he' },
+  { label: 'Liên hệ', href: '/lien-he' },
 ];
 
 /** Sticky header với logo, hamburger và navigation overlay */

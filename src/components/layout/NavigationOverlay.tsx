@@ -10,12 +10,11 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
   { label: 'Trang Chủ',     href: '/' },
-  { label: 'Giới Thiệu',    href: '#about' },
-  { label: 'Dịch Vụ',       href: '#services' },
-  { label: 'Dự Án',         href: '#portfolio' },
-  { label: 'Bảng Giá',      href: '#pricing' },
-  { label: 'Quy Trình',     href: '#process' },
-  { label: 'Blog',           href: '/blog' },
+  { label: 'Giới Thiệu',    href: '/gioi-thieu' },
+  { label: 'Dịch Vụ',       href: '/dich-vu' },
+  { label: 'Dự Án',         href: '/du-an' },
+  { label: 'Bảng Giá',      href: '/bang-gia' },
+  { label: 'Blog',          href: '/blog' },
 ];
 
 interface NavigationOverlayProps {
