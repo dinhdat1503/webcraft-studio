@@ -23,6 +23,7 @@ export const portfolioData: PortfolioItem[] = [
     imageSrc: '/assets/portfolio/portfolio_corporate.png',
     imageAlt: 'Website Doanh Nghiệp TechVision Corp',
     tags: ['Corporate', 'Next.js', 'TypeScript'],
+    detailLink: '/dich-vu/thiet-ke-website',
   },
   {
     id: 'lamaison',
@@ -34,6 +35,7 @@ export const portfolioData: PortfolioItem[] = [
     imageSrc: '/assets/portfolio/portfolio_restaurant.png',
     imageAlt: 'Website Nhà Hàng La Maison Fine Dining',
     tags: ['Restaurant', 'Booking System'],
+    detailLink: '/dich-vu/am-thuc-nha-hang',
   },
   {
     id: 'luxproperty',
