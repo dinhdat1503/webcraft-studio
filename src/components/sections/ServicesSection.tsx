@@ -64,7 +64,7 @@ const ServicesSection: FC = () => {
               </ul>
 
               <a
-                href="#contact"
+                href="/lien-he"
                 className="inline-flex items-center gap-2 font-bold text-sm text-white
                   border-b-2 border-white/40 pb-0.5 hover:border-white hover:gap-3 transition-all duration-300"
               >

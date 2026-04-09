@@ -55,7 +55,7 @@ const CorporateProcess: FC = () => {
           </span>
           <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold leading-[1.08] tracking-tight text-white mb-5">
             5 bước tạo nên{' '}
-            <span className="text-brand-catchie-blue">website đẳng cấp</span>
+            <span className="text-brand-catchie-blue">website chuyên nghiệp</span>
           </h2>
           <p className="text-base md:text-lg max-w-2xl mx-auto text-slate-300">
             Quy trình chuyên nghiệp, minh bạch và hiệu quả. Bạn sẽ được cập nhật tiến độ 

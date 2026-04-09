@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Thiết Kế Website Doanh Nghiệp Chuyên Nghiệp | CATCHIE',
     description:
-      'Website doanh nghiệp đẳng cấp – UI/UX độc quyền, PageSpeed 95+, bảo mật cấp doanh nghiệp và hỗ trợ 24/7.',
+      'Website doanh nghiệp chuyên nghiệp – UI/UX độc quyền, PageSpeed 95+, bảo mật cấp doanh nghiệp và hỗ trợ 24/7.',
     type: 'website',
     locale: 'vi_VN',
   },

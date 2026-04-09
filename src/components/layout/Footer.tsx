@@ -65,7 +65,7 @@ const Footer: FC = () => {
           <div className="mt-5 space-y-3">
             {[
               { icon: 'map-pin', text: '123 Nguyễn Huệ, Q.1, TP.HCM' },
-              { icon: 'phone',   text: '090 123 4567' },
+              { icon: 'phone',   text: '0971 69 2675' },
               { icon: 'mail',    text: 'hello@catchie.vn' },
             ].map(item => (
               <div key={item.icon} className="flex gap-3 items-start text-sm text-white/55">
@@ -98,9 +98,9 @@ const Footer: FC = () => {
               { label: 'Giới Thiệu',         href: '#about' },
               { label: 'Dự Án Tiêu Biểu',    href: '#portfolio' },
               { label: 'Quy Trình Làm Việc',  href: '#process' },
-              { label: 'Blog & Tin Tức',      href: '#blog' },
+              { label: 'Blog & Tin Tức',      href: '/blog' },
               { label: 'Tuyển Dụng',          href: '#' },
-              { label: 'Liên Hệ',            href: '#contact' },
+              { label: 'Liên Hệ',            href: '/lien-he' },
             ].map(link => (
               <li key={link.label}><Link href={link.href} className="text-white/50 hover:text-brand-catchie-blue hover:pl-1 transition-all duration-200">{link.label}</Link></li>
             ))}

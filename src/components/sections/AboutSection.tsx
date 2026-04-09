@@ -49,7 +49,7 @@ const AboutSection: FC = () => {
             ))}
           </div>
 
-          <Button href="#contact">Liên hệ tư vấn miễn phí</Button>
+          <Button href="/lien-he">Liên hệ tư vấn miễn phí</Button>
         </div>
 
         {/* Right: Stats grid */}

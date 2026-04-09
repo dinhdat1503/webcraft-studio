@@ -22,9 +22,11 @@ const CtaBanner: FC = () => {
           hiệu quả và mang lại doanh thu thực sự.
         </p>
         <div className="flex gap-4 justify-center flex-wrap">
-          <Button href="#contact" size="lg">Liên hệ ngay hôm nay</Button>
-          <Button href="tel:0901234567" variant="outline-white" size="lg">
-            📞 090 123 4567
+          <Button href="https://zalo.me/0971692675" size="lg">
+            💬 Chat Zalo ngay
+          </Button>
+          <Button href="tel:0971692675" variant="outline-white" size="lg">
+            📞 0971 69 2675
           </Button>
         </div>
       </div>

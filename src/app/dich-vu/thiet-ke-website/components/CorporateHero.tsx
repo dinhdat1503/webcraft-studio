@@ -43,7 +43,7 @@ const CorporateHero: FC = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-white/60 leading-relaxed max-w-lg mb-10">
-              Xây dựng thương hiệu số đẳng cấp với website doanh nghiệp chuyên nghiệp.
+              Xây dựng thương hiệu số chuyên nghiệp với website doanh nghiệp ấn tượng.
               Tạo ấn tượng mạnh mẽ với đối tác và khách hàng ngay từ cái nhìn đầu tiên.
             </p>
 

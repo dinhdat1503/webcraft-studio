@@ -12,7 +12,8 @@ const navItems = [
   { label: 'Dịch vụ', href: '#services' },
   { label: 'Dự án', href: '#portfolio' },
   { label: 'Bảng giá', href: '#pricing' },
-  { label: 'Blog', href: '#blog' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Liên hệ', href: '/lien-he' },
 ];
 
 /** Sticky header với logo, hamburger và navigation overlay */
@@ -62,7 +63,7 @@ const Header: FC = () => {
 
           <div className="hidden lg:flex items-center">
             <Link
-              href="#contact"
+              href="/lien-he"
               className="inline-flex items-center rounded-xl px-5 py-2.5 text-sm font-bold text-white bg-brand-catchie-blue hover:bg-blue-400 transition-all shadow-[0_0_22px_rgba(93,173,226,0.35)]"
             >
               Bắt đầu dự án

@@ -9,13 +9,13 @@ interface NavLink {
 }
 
 const navLinks: NavLink[] = [
-  { label: 'Trang Chủ',     href: '#hero' },
+  { label: 'Trang Chủ',     href: '/' },
   { label: 'Giới Thiệu',    href: '#about' },
   { label: 'Dịch Vụ',       href: '#services' },
   { label: 'Dự Án',         href: '#portfolio' },
   { label: 'Bảng Giá',      href: '#pricing' },
   { label: 'Quy Trình',     href: '#process' },
-  { label: 'Blog',           href: '#blog' },
+  { label: 'Blog',           href: '/blog' },
 ];
 
 interface NavigationOverlayProps {
@@ -57,7 +57,7 @@ const NavigationOverlay: FC<NavigationOverlayProps> = ({ isOpen, onClose }) => {
 
           <div className="mt-6 flex flex-col sm:flex-row items-center gap-3">
             <Link
-              href="#contact"
+              href="/lien-he"
               onClick={onClose}
               className="w-full sm:w-auto text-center font-heading text-base font-bold text-white
                 px-6 py-3 rounded-xl bg-brand-catchie-blue shadow-[0_0_15px_rgba(93,173,226,0.4)]

@@ -32,7 +32,7 @@ const CorporateCTA: FC = () => {
 
             <p className="text-white/60 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
               Liên hệ ngay với CATCHIE để nhận tư vấn miễn phí và bắt đầu hành trình xây dựng 
-              website doanh nghiệp đẳng cấp cùng chúng tôi.
+              website doanh nghiệp chuyên nghiệp cùng chúng tôi.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

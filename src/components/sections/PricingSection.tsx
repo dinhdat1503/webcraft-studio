@@ -65,7 +65,7 @@ const PricingSection: FC = () => {
               </ul>
 
               <Button
-                href="#contact"
+                href="/lien-he"
                 variant={plan.isFeatured ? 'outline-white' : 'outline-dark'}
                 fullWidth
                 className={plan.isFeatured ? '' : '!border-white/30 !text-white hover:!bg-brand-catchie-blue/25 hover:!text-white'}

@@ -44,7 +44,7 @@ const HeroSection: FC = () => {
 
         {/* CTA Buttons */}
         <div className="flex gap-3 md:gap-4 justify-center flex-wrap mb-14">
-          <Button href="#contact" size="lg">Khởi Hành Ngay</Button>
+          <Button href="/lien-he" size="lg">Khởi Hành Ngay</Button>
           <Button href="#portfolio" variant="outline" size="lg">Khám Phá Vũ Trụ</Button>
         </div>
 
