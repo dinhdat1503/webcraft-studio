@@ -47,6 +47,7 @@ export const portfolioData: PortfolioItem[] = [
     imageSrc: '/assets/portfolio/portfolio_realestate.png',
     imageAlt: 'Website Bất Động Sản LuxProperty Vietnam',
     tags: ['Real Estate', 'Map Integration', '3D Tour'],
+    detailLink: '/dich-vu/bat-dong-san',
   },
   {
     id: 'cloudflow',
@@ -58,6 +59,7 @@ export const portfolioData: PortfolioItem[] = [
     imageSrc: '/assets/portfolio/portfolio_landing.png',
     imageAlt: 'Landing Page SaaS CloudFlow',
     tags: ['SaaS', 'Landing Page', 'A/B Testing'],
+    detailLink: '/dich-vu/saas-startup',
   },
   {
     id: 'medicare',
@@ -69,5 +71,6 @@ export const portfolioData: PortfolioItem[] = [
     imageSrc: '/assets/portfolio/portfolio_healthcare.png',
     imageAlt: 'Website Phòng Khám MediCare Plus',
     tags: ['Healthcare', 'Booking', 'Medical'],
+    detailLink: '/dich-vu/y-te-suc-khoe',
   },
 ];
