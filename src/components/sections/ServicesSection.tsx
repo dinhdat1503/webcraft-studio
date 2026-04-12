@@ -42,7 +42,7 @@ const ServicesSection: FC = () => {
               className={`relative cosmic-surface surface-hover rounded-2xl p-7 md:p-9 group
                 ${svc.isFeatured ? 'ring-2 ring-brand-catchie-blue/60 bg-brand-catchie-blue/20' : 'hover:bg-brand-catchie-navy/35'}`}
             >
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-brand-catchie-blue/8 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-brand-catchie-blue/8 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
               {svc.badgeText && (
                 <span className="inline-block bg-brand-catchie-blue text-white text-xs font-bold
                   uppercase tracking-widest px-3 py-1 rounded mb-6">
@@ -66,11 +66,11 @@ const ServicesSection: FC = () => {
 
               <Link
                 href={
-                  svc.id === 'design' ? '/bang-gia/thiet-ke-website' :
+                  svc.id === 'design' ? '/bang-gia/thiet-ke-website' : 
                   svc.id === 'maintenance' ? '/bang-gia/cham-soc-website' :
                   svc.id === 'content' ? '/bang-gia/sang-tao-noi-dung' : '/lien-he'
                 }
-                className="inline-flex items-center gap-2 font-bold text-sm text-white
+                className="relative z-10 inline-flex items-center gap-2 font-bold text-sm text-white
                   border-b-2 border-white/40 pb-0.5 hover:border-white hover:gap-3 transition-all duration-300"
               >
                 Tìm hiểu thêm
