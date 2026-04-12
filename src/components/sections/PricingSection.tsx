@@ -1,21 +1,33 @@
 import { type FC } from 'react';
 import SectionHeader from '@/components/ui/SectionHeader';
 import Button from '@/components/ui/Button';
-import { pricingData } from '@/data/pricing.data';
+import type { PricingPlan } from '@/types';
 
-const PricingSection: FC = () => {
+type PricingSectionProps = {
+  tag?: string;
+  title: React.ReactNode;
+  description?: string;
+  data: PricingPlan[];
+};
+
+const PricingSection: FC<PricingSectionProps> = ({ 
+  tag = "Bảng Giá", 
+  title, 
+  description, 
+  data 
+}) => {
   return (
     <section id="pricing" className="section-pad bg-brand-deep-space">
       <div className="page-container">
         <SectionHeader
-          tag="Bảng Giá"
-          title={<>Gói dịch vụ phù hợp<br />cho <span className="text-brand-catchie-blue">mọi nhu cầu</span></>}
-          description="Chúng tôi cam kết mang lại giá trị thực sự với mức đầu tư hợp lý nhất thị trường"
+          tag={tag}
+          title={title}
+          description={description}
           light
         />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-          {pricingData.map((plan) => (
+          {data.map((plan) => (
             <div
               key={plan.id}
               className={`relative rounded-2xl p-7 md:p-8 border transition-all duration-300 hover:-translate-y-1.5

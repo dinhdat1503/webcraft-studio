@@ -1,4 +1,5 @@
 import { type FC } from 'react';
+import Link from 'next/link';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { servicesData } from '@/data/services.data';
 
@@ -63,13 +64,17 @@ const ServicesSection: FC = () => {
                 ))}
               </ul>
 
-              <a
-                href="/lien-he"
+              <Link
+                href={
+                  svc.id === 'design' ? '/bang-gia/thiet-ke-website' :
+                  svc.id === 'maintenance' ? '/bang-gia/cham-soc-website' :
+                  svc.id === 'content' ? '/bang-gia/sang-tao-noi-dung' : '/lien-he'
+                }
                 className="inline-flex items-center gap-2 font-bold text-sm text-white
                   border-b-2 border-white/40 pb-0.5 hover:border-white hover:gap-3 transition-all duration-300"
               >
                 Tìm hiểu thêm
-              </a>
+              </Link>
             </div>
           ))}
         </div>

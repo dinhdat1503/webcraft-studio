@@ -11,7 +11,15 @@ const navItems = [
   { label: 'Giới thiệu', href: '/gioi-thieu' },
   { label: 'Dịch vụ', href: '/dich-vu' },
   { label: 'Dự án', href: '/du-an' },
-  { label: 'Bảng giá', href: '/bang-gia' },
+  { 
+    label: 'Bảng giá', 
+    href: '/bang-gia',
+    children: [
+      { label: 'Thiết kế website', href: '/bang-gia/thiet-ke-website' },
+      { label: 'Chăm sóc website', href: '/bang-gia/cham-soc-website' },
+      { label: 'Sáng tạo nội dung', href: '/bang-gia/sang-tao-noi-dung' },
+    ]
+  },
   { label: 'Blog', href: '/blog' },
   { label: 'Liên hệ', href: '/lien-he' },
 ];
@@ -51,13 +59,32 @@ const Header: FC = () => {
 
           <nav className="hidden lg:flex items-center gap-2">
             {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="px-4 py-2 text-sm font-semibold text-slate-200 rounded-xl hover:bg-brand-catchie-blue/15 hover:text-white transition-all"
-              >
-                {item.label}
-              </Link>
+              <div key={item.href} className="relative group">
+                <Link
+                  href={item.href}
+                  className="px-4 py-2 text-sm font-semibold text-slate-200 rounded-xl hover:bg-brand-catchie-blue/15 hover:text-white transition-all inline-flex items-center gap-1"
+                >
+                  {item.label}
+                  {item.children && (
+                    <svg className="w-4 h-4 text-slate-400 group-hover:text-white transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
+                  )}
+                </Link>
+                {item.children && (
+                  <div className="absolute top-full left-0 mt-2 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <div className="py-2 bg-brand-deep-space/90 backdrop-blur-xl border border-brand-catchie-blue/25 rounded-xl shadow-[0_0_20px_rgba(93,173,226,0.15)] flex flex-col">
+                      {item.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="px-4 py-2.5 text-sm font-medium text-slate-300 hover:text-white hover:bg-brand-catchie-blue/20 transition-colors"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
             ))}
           </nav>
 

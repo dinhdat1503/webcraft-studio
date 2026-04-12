@@ -16,6 +16,43 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Run With Docker
+
+This project now includes a production-ready Docker setup:
+
+- `Dockerfile`: multi-stage build for a small runtime image
+- `docker-compose.yml`: quick local run with port and env wiring
+- `.dockerignore`: reduces build context size
+
+### 1) Prepare env file
+
+Copy the sample env and update values:
+
+```bash
+cp .env.docker.example .env.local
+```
+
+### 2) Build and run
+
+```bash
+docker compose up --build -d
+```
+
+Then open [http://localhost:3000](http://localhost:3000).
+
+### 3) Stop containers
+
+```bash
+docker compose down
+```
+
+### Useful commands
+
+```bash
+docker compose logs -f web
+docker compose ps
+```
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

@@ -40,126 +40,126 @@ const Footer: FC = () => {
     <footer className="bg-brand-deep-space text-white/70 relative overflow-hidden" id="contact">
       {/* Background stars effect */}
       <div className="absolute inset-0 bg-grid-blue opacity-10"></div>
-      
+
       <div className="page-container py-20 relative z-10">
         <div className="cosmic-surface rounded-3xl p-6 md:p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-        {/* Brand */}
-        <div className="lg:col-span-1">
-          <Link href="/" className="flex items-center gap-3 mb-5 group w-fit">
-            <span className="absolute -inset-1 rounded-xl bg-brand-catchie-blue/12 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-            <span className="relative h-14 w-[152px] overflow-hidden">
-              <Image
-                src="/assets/catchie-fullmark-transparent.png"
-                alt="CATCHIE"
-                fill
-                sizes="152px"
-                quality={100}
-                className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.02] drop-shadow-[0_0_10px_rgba(93,173,226,0.4)]"
-              />
-            </span>
-          </Link>
-          <p className="text-sm leading-relaxed text-white/55 max-w-xs">
-            Công ty thiết kế website chuyên nghiệp tại Việt Nam. Chúng tôi giúp doanh nghiệp phát triển mạnh mẽ trong kỷ nguyên số.
-          </p>
-          <div className="mt-5 space-y-3">
-            {[
-              { icon: 'map-pin', text: '123 Nguyễn Huệ, Q.1, TP.HCM' },
-              { icon: 'phone',   text: '0971 69 2675' },
-              { icon: 'mail',    text: 'hello@catchie.vn' },
-            ].map(item => (
-              <div key={item.icon} className="flex gap-3 items-start text-sm text-white/55">
-                <svg className="w-4 h-4 mt-0.5 shrink-0 text-brand-catchie-blue" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
-                  {item.icon === 'map-pin' && <><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></>}
-                  {item.icon === 'phone'   && <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 13.6 19.79 19.79 0 011.62 5a2 2 0 011.995-2H6.5a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 10.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>}
-                  {item.icon === 'mail'    && <><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></>}
-                </svg>
-                <span>{item.text}</span>
-              </div>
-            ))}
+          {/* Brand */}
+          <div className="lg:col-span-1">
+            <Link href="/" className="flex items-center gap-3 mb-5 group w-fit">
+              <span className="absolute -inset-1 rounded-xl bg-brand-catchie-blue/12 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <span className="relative h-14 w-[152px] overflow-hidden">
+                <Image
+                  src="/assets/catchie-fullmark-transparent.png"
+                  alt="CATCHIE"
+                  fill
+                  sizes="152px"
+                  quality={100}
+                  className="object-contain object-center transition-transform duration-300 group-hover:scale-[1.02] drop-shadow-[0_0_10px_rgba(93,173,226,0.4)]"
+                />
+              </span>
+            </Link>
+            <p className="text-sm leading-relaxed text-white/55 max-w-xs">
+              Công ty thiết kế website chuyên nghiệp tại Việt Nam. Chúng tôi giúp doanh nghiệp phát triển mạnh mẽ trong kỷ nguyên số.
+            </p>
+            <div className="mt-5 space-y-3">
+              {[
+                { icon: 'map-pin', text: '123 Nguyễn Huệ, Q.1, TP.HCM' },
+                { icon: 'phone', text: '0971 69 2675' },
+                { icon: 'mail', text: 'hello@catchie.vn' },
+              ].map(item => (
+                <div key={item.icon} className="flex gap-3 items-start text-sm text-white/55">
+                  <svg className="w-4 h-4 mt-0.5 shrink-0 text-brand-catchie-blue" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+                    {item.icon === 'map-pin' && <><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" /><circle cx="12" cy="10" r="3" /></>}
+                    {item.icon === 'phone' && <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 13.6 19.79 19.79 0 011.62 5a2 2 0 011.995-2H6.5a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.91 10.09a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />}
+                    {item.icon === 'mail' && <><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></>}
+                  </svg>
+                  <span>{item.text}</span>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* Services links */}
-        <div>
-          <h4 className="text-white text-sm font-bold uppercase tracking-[0.1em] mb-5">Dịch Vụ</h4>
-          <ul className="space-y-3 text-sm">
-            {['Thiết Kế Website', 'Website Thương Mại Điện Tử', 'Landing Page', 'Chăm Sóc Website', 'SEO & Tiếp Thị', 'Sáng Tạo Nội Dung'].map(s => (
-              <li key={s}><Link href="#services" className="text-white/50 hover:text-brand-catchie-blue hover:pl-1 transition-all duration-200">{s}</Link></li>
-            ))}
-          </ul>
-        </div>
+          {/* Services links */}
+          <div>
+            <h4 className="text-white text-sm font-bold uppercase tracking-[0.1em] mb-5">Dịch Vụ</h4>
+            <ul className="space-y-3 text-sm">
+              {['Thiết Kế Website', 'Chăm Sóc Website', 'SEO & Tiếp Thị', 'Sáng Tạo Nội Dung'].map(s => (
+                <li key={s}><Link href="#services" className="text-white/50 hover:text-brand-catchie-blue hover:pl-1 transition-all duration-200">{s}</Link></li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Company links */}
-        <div>
-          <h4 className="text-white text-sm font-bold uppercase tracking-[0.1em] mb-5">Công Ty</h4>
-          <ul className="space-y-3 text-sm">
-            {[
-              { label: 'Giới Thiệu',         href: '/gioi-thieu' },
-              { label: 'Dịch Vụ',            href: '/dich-vu' },
-              { label: 'Dự Án Tiêu Biểu',    href: '/du-an' },
-              { label: 'Bảng Giá',           href: '/bang-gia' },
-              { label: 'Blog',               href: '/blog' },
-              { label: 'Liên Hệ',            href: '/lien-he' },
-            ].map(link => (
-              <li key={link.label}><Link href={link.href} className="text-white/50 hover:text-brand-catchie-blue hover:pl-1 transition-all duration-200">{link.label}</Link></li>
-            ))}
-          </ul>
-        </div>
+          {/* Company links */}
+          <div>
+            <h4 className="text-white text-sm font-bold uppercase tracking-[0.1em] mb-5">Công Ty</h4>
+            <ul className="space-y-3 text-sm">
+              {[
+                { label: 'Giới Thiệu', href: '/gioi-thieu' },
+                { label: 'Dịch Vụ', href: '/dich-vu' },
+                { label: 'Dự Án Tiêu Biểu', href: '/du-an' },
+                { label: 'Bảng Giá', href: '/bang-gia' },
+                { label: 'Blog', href: '/blog' },
+                { label: 'Liên Hệ', href: '/lien-he' },
+              ].map(link => (
+                <li key={link.label}><Link href={link.href} className="text-white/50 hover:text-brand-catchie-blue hover:pl-1 transition-all duration-200">{link.label}</Link></li>
+              ))}
+            </ul>
+          </div>
 
-        {/* Contact form */}
-        <div>
-          <h4 className="text-white text-sm font-bold uppercase tracking-[0.1em] mb-5">Nhận Tư Vấn Miễn Phí</h4>
-          <form onSubmit={handleSubmit} className="space-y-3">
-            {[
-              { name: 'name',    placeholder: 'Họ và tên *', type: 'text' },
-              { name: 'company', placeholder: 'Tên công ty', type: 'text' },
-              { name: 'phone',   placeholder: 'Số điện thoại *', type: 'tel' },
-            ].map(field => (
-              <div key={field.name}>
-                <input
-                  type={field.type}
-                  name={field.name}
-                  placeholder={field.placeholder}
-                  value={formData[field.name as keyof ContactFormData]}
-                  onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-brand-catchie-navy/50 border rounded-lg text-white text-sm
+          {/* Contact form */}
+          <div>
+            <h4 className="text-white text-sm font-bold uppercase tracking-[0.1em] mb-5">Nhận Tư Vấn Miễn Phí</h4>
+            <form onSubmit={handleSubmit} className="space-y-3">
+              {[
+                { name: 'name', placeholder: 'Họ và tên *', type: 'text' },
+                { name: 'company', placeholder: 'Tên công ty', type: 'text' },
+                { name: 'phone', placeholder: 'Số điện thoại *', type: 'tel' },
+              ].map(field => (
+                <div key={field.name}>
+                  <input
+                    type={field.type}
+                    name={field.name}
+                    placeholder={field.placeholder}
+                    value={formData[field.name as keyof ContactFormData]}
+                    onChange={handleChange}
+                    className={`w-full px-4 py-3 bg-brand-catchie-navy/50 border rounded-lg text-white text-sm
                     placeholder:text-white/35 focus:outline-none focus:border-brand-catchie-blue focus:bg-brand-catchie-blue/5 focus:ring-2 focus:ring-brand-catchie-blue/30
                     transition-all duration-300
                     ${errors[field.name] ? 'border-brand-catchie-blue' : 'border-white/10'}`}
-                />
-                {errors[field.name] && (
-                  <p className="text-brand-catchie-blue text-xs mt-1">{errors[field.name]}</p>
-                )}
-              </div>
-            ))}
+                  />
+                  {errors[field.name] && (
+                    <p className="text-brand-catchie-blue text-xs mt-1">{errors[field.name]}</p>
+                  )}
+                </div>
+              ))}
 
-            <select
-              name="service"
-              value={formData.service}
-              onChange={handleChange}
-              className="w-full px-4 py-3 bg-brand-catchie-navy/50 border border-white/10 rounded-lg
+              <select
+                name="service"
+                value={formData.service}
+                onChange={handleChange}
+                className="w-full px-4 py-3 bg-brand-catchie-navy/50 border border-white/10 rounded-lg
                 text-white/50 text-sm focus:outline-none focus:border-brand-catchie-blue focus:ring-2 focus:ring-brand-catchie-blue/30 transition-all duration-300"
-            >
-              <option value="">Dịch vụ quan tâm</option>
-              <option value="design">Thiết kế website</option>
-              <option value="ecom">Website TMĐT</option>
-              <option value="landing">Landing page</option>
-              <option value="maintenance">Chăm sóc website</option>
-            </select>
+              >
+                <option value="">Dịch vụ quan tâm</option>
+                <option value="design">Thiết kế website</option>
+                <option value="ecom">Website TMĐT</option>
+                <option value="landing">Landing page</option>
+                <option value="maintenance">Chăm sóc website</option>
+              </select>
 
-            <Button
-              type="submit"
-              fullWidth
-              disabled={status === 'loading'}
-              className={status === 'success' ? '!bg-green-500 !border-green-500' : ''}
-            >
-              {status === 'loading' ? 'Đang gửi...' : status === 'success' ? '✓ Đã gửi thành công!' : 'Gửi yêu cầu'}
-            </Button>
-          </form>
+              <Button
+                type="submit"
+                fullWidth
+                disabled={status === 'loading'}
+                className={status === 'success' ? '!bg-green-500 !border-green-500' : ''}
+              >
+                {status === 'loading' ? 'Đang gửi...' : status === 'success' ? '✓ Đã gửi thành công!' : 'Gửi yêu cầu'}
+              </Button>
+            </form>
+          </div>
+
         </div>
-
-      </div>
       </div>
 
       {/* Footer bottom */}

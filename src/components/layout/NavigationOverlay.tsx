@@ -13,7 +13,9 @@ const navLinks: NavLink[] = [
   { label: 'Giới Thiệu',    href: '/gioi-thieu' },
   { label: 'Dịch Vụ',       href: '/dich-vu' },
   { label: 'Dự Án',         href: '/du-an' },
-  { label: 'Bảng Giá',      href: '/bang-gia' },
+  { label: 'BG: Thiết kế web', href: '/bang-gia/thiet-ke-website' },
+  { label: 'BG: Chăm sóc web', href: '/bang-gia/cham-soc-website' },
+  { label: 'BG: Sáng tạo ND',  href: '/bang-gia/sang-tao-noi-dung' },
   { label: 'Blog',          href: '/blog' },
 ];
 
