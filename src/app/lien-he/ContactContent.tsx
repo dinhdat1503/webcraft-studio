@@ -205,15 +205,15 @@ const ContactForm: FC = () => {
                     className="w-full px-5 py-4 bg-brand-catchie-navy/50 border border-white/10 rounded-xl
                       text-white/50 text-sm focus:outline-none focus:border-brand-catchie-blue focus:ring-2 focus:ring-brand-catchie-blue/30 transition-all duration-300"
                   >
-                    <option value="">Dịch vụ quan tâm</option>
-                    <option value="design">Thiết kế website</option>
-                    <option value="ecom">Website TMĐT</option>
-                    <option value="landing">Landing page</option>
-                    <option value="maintenance">Chăm sóc website</option>
-                    <option value="saas">SaaS & Startup</option>
-                    <option value="healthcare">Y tế & Sức khỏe</option>
-                    <option value="realestate">Bất động sản</option>
-                    <option value="restaurant">Ẩm thực & Nhà hàng</option>
+                    <option value="" className="text-gray-500 bg-white">Dịch vụ quan tâm</option>
+                    <option value="design" className="text-black bg-white">Thiết kế website</option>
+                    <option value="ecom" className="text-black bg-white">Website TMĐT</option>
+                    <option value="landing" className="text-black bg-white">Landing page</option>
+                    <option value="maintenance" className="text-black bg-white">Chăm sóc website</option>
+                    <option value="saas" className="text-black bg-white">SaaS & Startup</option>
+                    <option value="healthcare" className="text-black bg-white">Y tế & Sức khỏe</option>
+                    <option value="realestate" className="text-black bg-white">Bất động sản</option>
+                    <option value="restaurant" className="text-black bg-white">Ẩm thực & Nhà hàng</option>
                   </select>
 
                   <Button
